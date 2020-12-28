@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #616161;
+  border-radius: 5px;
+}
+
+body {
+  background: #fcfcfc;
+}
+
+.header-span {
+  color: #cc0000;
+}
+
+#all_mess {
+  position: relative;
+  height: 500px;
+  overflow-wrap: anywhere;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+}
+
+#all_mess > div {
+  animation: block 1s ease-in-out;
+}
+
+@keyframes block {
+  0% { opacity: 0.1; }   
+  100% { opacity: 1;  }
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    padding-top: 10px;
+  }
+
+  div.header {
+    display: none !important;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  #all_mess {
+    height: 280px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .msgName {
+    font-size: 12px;
+  }
+
+  #message,
+  #name,
+  #colorMsg,
+  .btn {
+    font-size: 12px;
+  }
+
+  input, #colorMsg {
+    margin-bottom: 0px !important;
+  }
+
+}
